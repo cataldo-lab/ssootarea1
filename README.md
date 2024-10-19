@@ -1,19 +1,36 @@
 # ssootarea1
+Aclaración: 
 
+        $g++ -std=c++11 -pthread -o carrera carrera.cpp   
+        $./carrera
 
-#Sistema 1: 
-#Para compilar el archivo carrera3.cpp:
-  $ g++ -std=c++11 -pthread -o carrera3 carrera3.cpp   
-  $ ./carrera3
+aparecera en pantalla:
 
+  "Ingrese la cantidad de metros que debe recorrer cada auto (M)" : <Numero_Entero>
+
+  "Ingrese la cantidad de autos (N)" : <Numero_Entero>
 #------------------------------------------------------
-#Sistema 2:
-#Archivo Makefile
-  CXX = g++
-  CXXFLAGS = -std=c++11 -pthread -Wall
-  EXEC = carrera_autos
-  $(EXEC): carrera3.cpp
-        $(CXX) $(CXXFLAGS) -o $(EXEC) carrera3.cpp
 
-#se presiona archivo nombre: carrera3
+
+#Sistema 2:
+
+#Archivo Makefile
+
+        $CXX = g++
+  
+        $CXXFLAGS = -std=c++11 -pthread -Wall
+  
+        $EXEC = carrera_autos
+  
+        $(EXEC): carrera.cpp
+  
+        $(CXX) $(CXXFLAGS) -o $(EXEC) carrera.cpp
+
+#se presiona archivo nombre: carrera
+aparecera en pantalla:
+
+ "Ingrese la cantidad de metros que debe recorrer cada auto (M)" : <Numero_Entero>
+
+ "Ingrese la cantidad de autos (N)" : <Numero_Entero>
+
 #Se abre una terminal bash
